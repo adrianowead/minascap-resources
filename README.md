@@ -1,0 +1,1 @@
+# minascap-resources
