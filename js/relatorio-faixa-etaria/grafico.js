@@ -9,8 +9,13 @@ var graficoFaixaEtaria = {
 		graficoFaixaEtaria.categories = categorias.split('|');
 		graficoFaixaEtaria.somaTotal = soma;
 
-		graficoFaixaEtaria.homem = dadosHomem.split('|');
-		graficoFaixaEtaria.mulher = dadosMulher.split('|');
+		graficoFaixaEtaria.homem = $.map( dadosHomem.split('|'), function(value){
+		    return parseInt(value);
+		});
+
+		graficoFaixaEtaria.mulher = $.map( dadosMulher.split('|'), function(value){
+		    return parseInt(value);
+		});
 	},
 
 	criarGrafico : function(){
