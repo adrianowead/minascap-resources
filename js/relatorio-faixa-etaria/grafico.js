@@ -13,7 +13,7 @@ var graficoFaixaEtaria = {
 		graficoFaixaEtaria.mulher = dadosMulher.split('|');
 	},
 
-	criarGrafico : {
+	criarGrafico : function(){
 
 	    Highcharts.chart('container', {
 	            chart: {
